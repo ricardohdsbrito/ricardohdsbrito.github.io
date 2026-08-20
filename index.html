@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- 連結我們的 CSS 樣式表 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入網絡圖標庫 -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- 頂部導航欄 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">RICARDO BRITO</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#blog" class="nav-link">Blog</a></li>
+                <li><a href="#portfolio" class="nav-link">Project</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- 手機版的三條線漢堡選單按鈕 -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首頁歡迎區塊 -->
+    <section id="home" class="hero-section">
+        <div class="hero-glow"></div>
+        
+        <div class="hero-content">
+            <span class="hero-tagline">WELCOME TO MY PORTFOLIO</span>
+            
+            <!-- 核心：動態打字機名字與光標 -->
+            <h1 class="hero-name">
+                I'm <span id="typewriter" class="text-gradient"></span><span class="cursor">|</span>
+            </h1>
+            
+            <!-- 職位與專注方向 -->
+            <h2 class="hero-job">Cybersecurity Researcher & Computer Engineer</h2>
+            <p>
+               PhD in Electrical and Computer Engineering, Assistant Professor at MUST.
+               Specializing in machine learning for cybersecurity, penetration testing, and building intelligent defense systems.
+            </p>
+            
+            <div class="hero-cta-group">
+                <a href="#portfolio" class="btn btn-primary">Explore Works <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Contact Me <i class="fa-solid fa-comment-dots"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我區塊 -->
+    <section id="about" class="premium-global-aligned-section thm-reveal">
+        <div class="panel-inner-container profile-panel-inner premium-cyber-border-card">
+            
+            <!-- 頂部工整文案：內外絕對同邊對齊 -->
+            <div class="profile-panel-header">
+                <span class="video-panel-tag">ABOUT ME // 專家檔案</span>
+                <h2 class="profile-panel-title">About Me / Bio & Expertise</h2>
+                <p class="profile-panel-desc">
+                    A cybersecurity scholar combining academic research with real-world defense, dedicated to applying machine learning to proactive security and protecting digital assets.
+                </p>
+            </div>
+
+            <!-- 核心：左右雙欄大網格佈局 -->
+            <div class="profile-main-grid">
+                
+                <!-- 【左邊欄】 -->
+                <div class="profile-left-column">
+                    
+                    <!-- 專業形象照 -->
+                    <div class="profile-photo-wrapper">
+                        <img src="images/IMG_9780副本.png" alt="Ricardo Brito - Professional Headshot" class="profile-photo">
+                    </div>
+                    
+                    <div class="bio-card">
+                        <p class="bio-text">
+                            A PhD graduate in electrical and computer engineering, with a focus on <strong>Machine Learning</strong>. I am also a part-time hacker at <strong>HackerOne</strong> and I also do pentesting of mobile applications, websites and APIs. Currently working as an assistant professor at the <strong>Macau University of Science and Technology (MUST)</strong>.
+                        </p>
+                    </div>
+
+                    <!-- 專業認證區塊 -->
+                    <div class="certifications-block">
+                        <h3 class="block-sub-title">Certifications</h3>
+                        <div class="cert-badges-wrapper">
+                            <span class="tech-badge-item">OSCP</span>
+                            <span class="tech-badge-item">CISSP</span>
+                            <span class="tech-badge-item">CEH Master</span>
+                            <span class="tech-badge-item">AWS Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 【右邊欄】 -->
+                <div class="profile-right-column">
+                    <h3 class="block-sub-title">Work Experience</h3>
+                    <div class="timeline-wrapper">
+                        
+                        <!-- 經歷 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">September 2024 – Present</div>
+                            <h4 class="timeline-job-title">Assistant Professor (MUST)</h4>
+                            <p class="timeline-job-desc">
+                                Teaching and researching in cybersecurity, machine learning, and IoT security at the Macau University of Science and Technology.
+                            </p>
+                        </div>
+
+                        <!-- 經歷 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">April 2024 – January 2025</div>
+                            <h4 class="timeline-job-title">Senior Penetration Testing Engineer</h4>
+                            <p class="timeline-job-desc">
+                                Provides proactive threat defense, API penetration testing, and architecture review for e-commerce, finance, and blockchain startups. Assisted 20+ companies in identifying high-risk logical vulnerabilities.
+                            </p>
+                        </div>
+
+                        <!-- 經歷 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 - March 2023</div>
+                            <h4 class="timeline-job-title">Data Scientist / Machine Learning Contractor <span class="company-anon">@ Hong Kong company</span></h4>
+                            <p class="timeline-job-desc">
+                                Machine Learning algorithms and NLP projects. All of the above models were implemented from scratch, all the training data was generated by myself using my own synthetic data generation algorithms (the company did not provide any dataset for me).
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 底部大氣下載 PDF 履歷按鈕 -->
+<div class="profile-action-area">
+    <a href="#" class="premium-pdf-btn" id="cvModalBtn" onclick="openCvModal(event)">
+        <span class="btn-icon">📥</span> Download the full PDF CV
+    </a>
+</div>
+
+        </div>
+    </section>
+
+    <!-- 作品集區塊 -->
+    <section id="portfolio" class="portfolio-section premium-global-aligned-section thm-reveal">
+        <div class="panel-inner-container">
+            
+            <!-- 頂部控制列 -->
+            <div class="hologram-header-row">
+                <div class="hologram-title-box">
+                    <span class="video-panel-tag">VULNERABILITY RESEARCH // 漏洞挖掘成果</span>
+                    <h3 class="profile-panel-title">CVEs Discovery Showcase</h3>
+                </div>
+                <!-- 智慧排序下拉選單 -->
+                <div class="hologram-sort-box">
+                    <label for="cve-sort-select">Discovery Date // </label>
+                    <select id="cve-sort-select" class="hologram-select-menu">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 智慧動態控制舞台 -->
+            <div id="dynamic-cve-list" class="dynamic-accordion-stage">
+                <!-- CVE 數據將由 JavaScript 動態渲染注入於此 -->
+            </div>
+
+            <!-- 動態分頁按鈕舞台 -->
+            <div id="cve-pagination" class="smart-pagination-container"></div>
+            
+        </div>
+    </section>
+
+    <!-- 合作品牌標誌跑馬燈 -->
+    <div class="brand-showcase-container">
+        <div class="brand-title">Found Vulnerabilities In</div>
+        <div class="brand-slider-wrapper">
+            <div class="brand-track">
+                <a href="#" class="brand-item"><img src="images/GitLab_logo.png" alt="GitLab"></a>
+                <a href="#" class="brand-item"><img src="images/Epic_Games.png" alt="Epic_Games"></a>
+                <a href="#" class="brand-item"><img src="images/Grammarly.png" alt="Grammarly" class="brand-grammarly"></a>
+                <a href="#" class="brand-item"><img src="images/Shopify_logo.svg" alt="shopify"></a>
+                <a href="#" class="brand-item"><img src="images/Reddit.png" alt="Reddit" class="brand-reddit"></a>
+                <a href="#" class="brand-item"><img src="images/Keeper_Security_logo.png" alt="Keeper Security"></a>
+
+                <a href="#" class="brand-item"><img src="images/GitLab_logo.png" alt="GitLab"></a>
+                <a href="#" class="brand-item"><img src="images/Epic_Games.png" alt="Epic_Games"></a>
+                <a href="#" class="brand-item"><img src="images/Grammarly.png" alt="Grammarly" class="brand-grammarly"></a>
+                <a href="#" class="brand-item"><img src="images/Shopify_logo.svg" alt="shopify"></a>
+                <a href="#" class="brand-item"><img src="images/Reddit.png" alt="Reddit" class="brand-reddit"></a>
+                <a href="#" class="brand-item"><img src="images/Keeper_Security_logo.png" alt="Keeper Security"></a>
+
+                <a href="#" class="brand-item"><img src="images/GitLab_logo.png" alt="GitLab"></a>
+                <a href="#" class="brand-item"><img src="images/Epic_Games.png" alt="Epic_Games"></a>
+                <a href="#" class="brand-item"><img src="images/Grammarly.png" alt="Grammarly" class="brand-grammarly"></a>
+                <a href="#" class="brand-item"><img src="images/Shopify_logo.svg" alt="shopify"></a>
+                <a href="#" class="brand-item"><img src="images/Reddit.png" alt="Reddit" class="brand-reddit"></a>
+                <a href="#" class="brand-item"><img src="images/Keeper_Security_logo.png" alt="Keeper Security"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3D 旋轉正圓圈技術認證牆 -->
+    <section class="premium-3d-logo-section">
+        <div class="logo-grid-container">
+            
+            <!-- 徽章一：TryHackMe -->
+            <a href="https://tryhackme.com" target="_blank" class="interactive-3d-logo-item">
+                <div class="logo-3d-stage">
+                    <img src="images/try.png" alt="TryHackMe" class="badge-main-img-3d" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-award\'></i>'">
+                </div>
+                <div class="badge-laser-guide">
+                    <div class="laser-vertical-line"></div>
+                    <span class="badge-tooltip-text">Visit My TryHackMe profile <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- 徽章二：HackerOne -->
+            <a href="https://hackerone.com/ricardobrito?type=user" target="_blank" class="interactive-3d-logo-item">
+                <div class="logo-3d-stage">
+                    <img src="images/hack.png" alt="HackerOne" class="badge-main-img-3d" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-terminal\'></i>'">
+                </div>
+                <div class="badge-laser-guide">
+                    <div class="laser-vertical-line"></div>
+                    <span class="badge-tooltip-text">Visit My HackerOne profile <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+
+            <!-- 徽章三：HackTheBox（放大版） -->
+            <a href="https://profile.hackthebox.com/profile/019c2e31-6dd4-70a7-9590-0a2e9b1581fd" target="_blank" class="interactive-3d-logo-item">
+                <div class="logo-3d-stage">
+                    <img src="images/blob.png" alt="HackTheBox" class="badge-main-img-3d badge-github-large" onerror="">
+                </div>
+                <div class="badge-laser-guide">
+                    <div class="laser-vertical-line"></div>
+                    <span class="badge-tooltip-text">Visit My HackTheBox profile <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+
+    <!-- 學術論文發表手風琴區塊 -->
+    <section class="scholar-hologram-publications-section">
+        <div class="hologram-container">
+            
+            <!-- 頂部控制列 -->
+            <div class="hologram-header-row">
+                <div class="hologram-title-box">
+                    <span class="hologram-section-tag">RESEARCH & PUBLICATIONS // 學術論文發表</span>
+                    <h3 class="hologram-section-title">Academic Publications & Research</h3>
+                </div>
+                <div class="hologram-sort-box">
+                    <label for="scholar-sort-select">Publication Date // </label>
+                    <select id="scholar-sort-select" class="hologram-select-menu">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="dynamic-hologram-scholar-list" class="hologram-list-wrapper">
+                <!-- 學術論文加載中... -->
+            </div>
+
+            <div id="scholar-pagination" class="scholar-pagination-container"></div>
+            
+        </div>
+    </section>
+
+    <!-- 網誌/文章區塊 -->
+    <section id="blog" class="blog-section thm-reveal">
+        <div class="blog-header-container">
+            <h2 class="section-title">Latest Articles</h2>
+            
+            <div class="sort-container" id="blog-sort-wrapper" style="display: none;">
+                <label for="blog-sort"><i class="fa-solid fa-sort"></i> Sort：</label>
+                <select id="blog-sort" class="sort-select">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="blog-grid" id="blog-grid"></div>
+        
+        <div class="blog-btn-container" id="load-all-container">
+            <button id="load-all-blog-btn" class="btn btn-secondary">
+                Load All Articles <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+
+        <div class="pagination-container" id="pagination" style="display: none;"></div>
+    </section>
+
+    <!-- 語言成果風琴式劇院面板 -->
+    <section class="premium-cinema-video-section">
+        <div class="video-panel-inner">
+            <!-- 頂部工整文案 -->
+            <div class="video-panel-header">
+                <span class="video-panel-tag">LANGUAGE JOURNEY // 多聲道語言實力</span>
+                <h3 class="video-panel-title">Breaking Cultural Boundaries: A Chronicle of My Multilingual Learning and Achievements</h3>
+                <p class="video-panel-desc">
+                    Click below to switch pages, watch my fluent speaking video demonstration, or view my professional language proficiency certificates.
+                </p>
+            </div>
+
+            <!-- 大廠級風琴式切換按鈕組 -->
+            <div class="cinema-tab-control">
+                <button class="tab-toggle-btn active" data-target="stage-video">
+                    <span class="tab-icon">🎬</span> Practical demonstration video
+                </button>
+                <button class="tab-toggle-btn" data-target="stage-certs">
+                    <span class="tab-icon">📜</span> Language proficiency certificate
+                </button>
+            </div>
+
+            <!-- 顯示內容舞台區 -->
+            <div class="cinema-stage-item stage-video active">
+                <div class="video-slider-container">
+                    
+                    <button class="slider-arrow prev-arrow" aria-label="Previous video">❮</button>
+                    
+                    <div class="slider-window">
+                        <div class="video-track">
+                            
+                            <!-- 影片 1 -->
+                            <div class="video-slide active">
+                                <div class="video-responsive-stage">
+                                   <iframe width="1440" height="546" 
+                                   src="https://www.youtube.com/embed/YMxbEcFeno8" 
+                                   title="Foreigner Learns Chinese - Interview with Ricardo Brito" frameborder="0" allow="accelerometer; 
+                                   autoplay; clipboard-write; 
+                                   encrypted-media; gyroscope; 
+                                   picture-in-picture; 
+                                   web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                </div>
+                            </div>
+
+                            <!-- 影片 2 -->
+                            <div class="video-slide">
+                                <div class="video-responsive-stage">
+                                    <iframe width="1440" height="546" src="https://www.youtube.com/embed/D0Bi1I6b37I" title="Chinese Music & Erhu - Cultural Journey" frameborder="0" 
+                                    allow="accelerometer; autoplay; 
+                                    clipboard-write; encrypted-media; 
+                                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="slider-arrow next-arrow" aria-label="Next video">❯</button>
+                    
+                </div>
+            </div>
+
+            <!-- 舞台 B：專業證書展示網格 -->
+            <div class="cinema-stage-item stage-certs">
+                <div class="certs-grid-stage">
+
+                    <!-- 證書卡片 1：HSK(4) -->
+                    <div class="cert-card horizontal-layout" data-img="images/HSK-4.jpeg">
+                        
+                        <div class="cert-left-visual">
+                            <a href="#" target="_blank" class="interactive-3d-logo-item" onclick="event.stopPropagation();">
+                                <div class="logo-3d-stage">
+                                    <img src="images/hsk.png" alt="HSK" class="badge-main-img-3d" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-code-branch\'></i>'">
+                                </div>  
+                            </a>
+                        </div>
+
+                        <div class="cert-right-content">
+                            <div class="cert-badge">HSK / Chinese Proficiency</div>
+                            <h4>HSK (Level 4) Chinese Language Proficiency Certificate</h4>
+                            <p>Achieved HSK Level 4 certification, demonstrating fluency in business negotiation and report writing in Chinese.</p>
+                            <span class="view-cert-hint">👁️ Click to view original certificate</span>
+                        </div>
+
+                    </div>
+
+                    <!-- 證書卡片 2：中葡即時傳譯課程證書 -->
+                    <div class="cert-card horizontal-layout" data-img="images/sse.png">
+                        
+                        <div class="cert-left-visual">
+                            <a href="#" target="_blank" class="interactive-3d-logo-item" onclick="event.stopPropagation();">
+                                <div class="logo-3d-stage">
+                                    <img src="images/1_fah_b.png" alt="Chinese-Portuguese Interpretation Certificate" class="badge-main-img-3d" onerror="this.style.display='none'; this.parentElement.innerHTML='<i class=\'fa-solid fa-certificate\'></i>'">
+                                </div>  
+                            </a>
+                        </div>
+
+                        <div class="cert-right-content">
+                            <div class="cert-badge">Chinese-Portuguese Interpretation</div>
+                            <h4>Certificate of Chinese-Portuguese Simultaneous Interpretation Course</h4>
+                            <p>Completed a 30-hour short-term course in Chinese-Portuguese simultaneous interpretation organized by the Centre for Chinese-Portuguese Bilingual Teaching and Training (CPC) at the University of Macau.</p>
+                            <span class="view-cert-hint">👁️ Click to view original certificate</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 證書放大彈窗容器 -->
+            <div id="certLightbox" class="cert-lightbox">
+                <div class="lightbox-overlay"></div>
+                <div class="lightbox-content-wrapper">
+                    <button class="lightbox-close-btn" aria-label="Close Lightbox">✕</button>
+                    <img id="lightboxImage" src="" alt="Certificate Detail">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 比賽得獎/榮譽區塊 -->
+    <section class="awards-section thm-reveal">
+        <div class="awards-container">
+            
+            <!-- 頂部標題 -->
+            <div class="awards-header">
+                <span class="awards-tag">🏆 AWARDS & ACHIEVEMENTS // 比賽得獎與榮譽</span>
+                <h3 class="awards-title">Competition Awards</h3>
+            </div>
+
+            <!-- 單一獎項 -->
+            <div class="awards-grid-single">
+                <div class="award-card-single">
+                    
+                    <div class="award-content-single">
+                        <div class="award-icon-single">🥈</div>
+                        <h4 class="award-name-single">University of Macau First Hackathon — 2nd Place Winner</h4>
+                        <p class="award-org-single">University of Macau · Centre for Innovation and Entrepreneurship</p>
+                        <p class="award-desc-single">
+                            Developed an innovative solution at the first University of Macau Hackathon, standing out among numerous teams and winning 2nd place.
+                        </p>
+                        <div class="award-footer">
+                            <span class="award-year-single">2018</span>
+                            <a href="https://www.um.edu.mo/news-and-press-releases/press-release/detail/46451/." target="_blank" class="award-link-btn">
+                                View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- 底部照片 -->
+                    <div class="award-image-bottom">
+                        <img src="images/top2.png" alt="University of Macau Hackathon 2nd Place Award">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 統計數據區塊 -->
+    <section class="stats-section thm-reveal">
+        <div class="stats-container">
+            
+            <!-- 統計項目 1 -->
+            <div class="stat-item">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Vulnerabilities Found<br><span>Reported & Verified</span></div>
+            </div>
+            
+            <!-- 統計項目 2 -->
+            <div class="stat-item">
+                <div class="stat-number" data-target="15">0</div>
+                <div class="stat-label">Academic Papers<br><span>Published Research</span></div>
+            </div>
+            
+            <!-- 統計項目 3 -->
+            <div class="stat-item">
+                <div class="stat-number" data-target="10">0</div>
+                <div class="stat-label">Companies Partnered<br><span>Collaborations</span></div>
+            </div>
+            
+            <!-- 統計項目 4 -->
+            <div class="stat-item">
+                <div class="stat-number" data-target="5">0</div>
+                <div class="stat-label">Programming Languages<br><span>Proficient In</span></div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 聯絡我區塊 -->
+    <!-- 聯絡區塊 -->
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Contact Me</h2>
+    
+    <div class="contact-wrapper">
+        <!-- 左側：聯絡表單 -->
+        <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Enter subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="contactSubmitBtn">
+                    Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <div id="contactFormStatus" style="display: none; margin-top: 12px; padding: 10px 16px; border-radius: 8px; font-weight: 600; text-align: center;"></div>
+            </form>
+        </div>
+
+        <!-- 右側：聯絡資訊（移除 Email） -->
+        <div class="contact-info-container">
+            <h3>Contact Information</h3>
+            <p class="contact-desc">For collaboration opportunities or research inquiries, please fill out the form and I'll get back to you within 24 hours.</p>
+            
+            <div class="info-list">
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Hong Kong / Worldwide (Remote Available)</span>
+                </div>
+            </div>
+
+            <h3>Connect With Me</h3>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://wa.me/85212345678" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+        <p>&copy; 2026 Ricardo Brito. All rights reserved.</p>
+    </footer>
+
+    <!-- 連結我們的 JavaScript 檔案 -->
+    <script src="script.js"></script>
+    <!-- ==========================================================================
+     CV 聯絡 Modal 彈窗
+     ========================================================================== -->
+<div id="cvModal" class="cv-modal">
+    <div class="cv-modal-overlay" onclick="closeCvModal()"></div>
+    <div class="cv-modal-content">
+        
+        <button class="cv-modal-close" onclick="closeCvModal()">✕</button>
+        
+        <div class="cv-modal-header">
+            <span class="cv-modal-icon">📄</span>
+            <h2>Request My Full CV</h2>
+            <p>I'd love to share my complete professional profile with you.<br>Please reach out through any of the channels below.</p>
+        </div>
+        
+        <div class="cv-contact-grid">
+            
+            <!-- LinkedIn（移除 Email） -->
+            <a href="https://linkedin.com" target="_blank" class="cv-contact-item">
+                <div class="cv-contact-icon">🔗</div>
+                <div class="cv-contact-info">
+                    <h4>LinkedIn</h4>
+                    <p>Connect with me</p>
+                </div>
+                <span class="cv-contact-arrow">→</span>
+            </a>
+            
+            <!-- WhatsApp -->
+            <a href="https://wa.me/85212345678" target="_blank" class="cv-contact-item">
+                <div class="cv-contact-icon">💬</div>
+                <div class="cv-contact-info">
+                    <h4>WhatsApp</h4>
+                    <p>Message me directly</p>
+                </div>
+                <span class="cv-contact-arrow">→</span>
+            </a>
+            
+            <!-- 表單取代 Email -->
+            <div class="cv-contact-item cv-email-request">
+                <div class="cv-contact-icon">✉️</div>
+                <div class="cv-contact-info">
+                    <h4>Send me your email</h4>
+                    <p>I'll send you my CV directly</p>
+                </div>
+                <form class="cv-email-form" id="cvEmailForm">
+                    <input type="email" id="cvEmailInput" placeholder="Your email address" required>
+                    <button type="submit">Send →</button>
+                </form>
+                <div id="cvFormStatus" style="display: none; margin-top: 10px; font-size: 13px; font-weight: 600; text-align: center;"></div>
+            </div>
+            
+        </div>
+        
+        <p class="cv-modal-footer">I'll respond within 24 hours. Looking forward to connecting!</p>
+        
+    </div>
+</div>
+        
+        <!-- 底部提示 -->
+        <p class="cv-modal-footer">I'll respond within 24 hours. Looking forward to connecting!</p>
+        
+    </div>
+</div>
+</body>
+</html>
