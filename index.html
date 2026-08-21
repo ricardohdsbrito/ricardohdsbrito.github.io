@@ -18,8 +18,10 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#blog" class="nav-link">Blog</a></li>
-                <li><a href="#portfolio" class="nav-link">Project</a></li>
+                <li><a href="#portfolio" class="nav-link">Cybersecurity </a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#awards" class="nav-link">Achievements</a></li>
+                <li><a href="#blog" class="nav-link">Articles</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <!-- 手機版的三條線漢堡選單按鈕 -->
@@ -91,10 +93,8 @@
                     <div class="certifications-block">
                         <h3 class="block-sub-title">Certifications</h3>
                         <div class="cert-badges-wrapper">
-                            <span class="tech-badge-item">OSCP</span>
-                            <span class="tech-badge-item">CISSP</span>
-                            <span class="tech-badge-item">CEH Master</span>
-                            <span class="tech-badge-item">AWS Security</span>
+                            <span class="tech-badge-item">HSK-4</span>
+                           
                         </div>
                     </div>
                 </div>
@@ -245,60 +245,36 @@
             
         </div>
     </section>
-
-    <!-- 學術論文發表手風琴區塊 -->
-    <section class="scholar-hologram-publications-section">
-        <div class="hologram-container">
-            
-            <!-- 頂部控制列 -->
-            <div class="hologram-header-row">
-                <div class="hologram-title-box">
-                    <span class="hologram-section-tag">RESEARCH & PUBLICATIONS // 學術論文發表</span>
-                    <h3 class="hologram-section-title">Academic Publications & Research</h3>
-                </div>
-                <div class="hologram-sort-box">
-                    <label for="scholar-sort-select">Publication Date // </label>
-                    <select id="scholar-sort-select" class="hologram-select-menu">
-                        <option value="newest">Newest First</option>
-                        <option value="oldest">Oldest First</option>
-                    </select>
-                </div>
+<!-- 學術論文發表手風琴區塊 -->
+<section id="publications" class="scholar-hologram-publications-section">
+    <div class="hologram-container">
+        
+        <!-- 頂部控制列 -->
+        <div class="hologram-header-row">
+            <div class="hologram-title-box">
+                <span class="hologram-section-tag">RESEARCH & PUBLICATIONS // 學術論文發表</span>
+                <h3 class="hologram-section-title">Academic Publications & Research</h3>
             </div>
-
-            <div id="dynamic-hologram-scholar-list" class="hologram-list-wrapper">
-                <!-- 學術論文加載中... -->
-            </div>
-
-            <div id="scholar-pagination" class="scholar-pagination-container"></div>
-            
-        </div>
-    </section>
-
-    <!-- 網誌/文章區塊 -->
-    <section id="blog" class="blog-section thm-reveal">
-        <div class="blog-header-container">
-            <h2 class="section-title">Latest Articles</h2>
-            
-            <div class="sort-container" id="blog-sort-wrapper" style="display: none;">
-                <label for="blog-sort"><i class="fa-solid fa-sort"></i> Sort：</label>
-                <select id="blog-sort" class="sort-select">
+            <div class="hologram-sort-box">
+                <label for="scholar-sort-select">Publication Date // </label>
+                <select id="scholar-sort-select" class="hologram-select-menu">
                     <option value="newest">Newest First</option>
                     <option value="oldest">Oldest First</option>
                 </select>
             </div>
         </div>
-        
-        <div class="blog-grid" id="blog-grid"></div>
-        
-        <div class="blog-btn-container" id="load-all-container">
-            <button id="load-all-blog-btn" class="btn btn-secondary">
-                Load All Articles <i class="fa-solid fa-chevron-down"></i>
-            </button>
+
+        <div id="dynamic-hologram-scholar-list" class="hologram-list-wrapper">
+            <!-- 學術論文加載中... -->
         </div>
 
-        <div class="pagination-container" id="pagination" style="display: none;"></div>
-    </section>
-
+        <div id="scholar-pagination" class="scholar-pagination-container"></div>
+        
+    </div>
+</section>
+    
+    <section id="awards" class="awards-section thm-reveal">
+    
     <!-- 語言成果風琴式劇院面板 -->
     <section class="premium-cinema-video-section">
         <div class="video-panel-inner">
@@ -420,8 +396,8 @@
 
         </div>
     </section>
-
-    <!-- 比賽得獎/榮譽區塊 -->
+ <!-- 比賽得獎/榮譽區塊 -->
+        <!-- 比賽得獎/榮譽區塊 -->
     <section class="awards-section thm-reveal">
         <div class="awards-container">
             
@@ -459,6 +435,32 @@
             </div>
 
         </div>
+    </section>
+</section>
+    
+<!-- 網誌/文章區塊 -->
+    <section id="blog" class="blog-section thm-reveal">
+        <div class="blog-header-container">
+            <h2 class="section-title">Latest Articles</h2>
+            
+            <div class="sort-container" id="blog-sort-wrapper" style="display: none;">
+                <label for="blog-sort"><i class="fa-solid fa-sort"></i> Sort：</label>
+                <select id="blog-sort" class="sort-select">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="blog-grid" id="blog-grid"></div>
+        
+        <div class="blog-btn-container" id="load-all-container">
+            <button id="load-all-blog-btn" class="btn btn-secondary">
+                Load All Articles <i class="fa-solid fa-chevron-down"></i>
+            </button>
+        </div>
+
+        <div class="pagination-container" id="pagination" style="display: none;"></div>
     </section>
 
     <!-- 統計數據區塊 -->
