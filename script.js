@@ -24,7 +24,7 @@ navLinks.forEach(link => {
 // ==========================================================================
 // 2. 首頁打字機效果
 // ==========================================================================
-const words = ["Ricardo Brito.", "A DEVELOPER.", "A Ethical Hacker."];
+const words = ["Ricardo Brito."];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
