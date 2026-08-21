@@ -3085,3 +3085,1149 @@ body {
 .hologram-action-btn:hover i {
     color: #ffffff !important;
 }
+
+/* ==========================================================================
+   📱 手機版 - 完整優化（只影響手機，不影響電腦）
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+    /* ===== 1. 首頁歡迎區塊 ===== */
+    .hero-section {
+        height: auto !important;
+        min-height: 100vh !important;
+        padding: 100px 16px 40px 16px !important;
+    }
+
+    .hero-name {
+        font-size: 28px !important;
+        letter-spacing: -1px !important;
+    }
+
+    .cursor {
+        font-size: 28px !important;
+    }
+
+    .hero-job {
+        font-size: 16px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero-content p {
+        font-size: 14px !important;
+        max-width: 100% !important;
+        margin: 0 auto 24px auto !important;
+        padding: 0 4px !important;
+    }
+
+    .hero-cta-group {
+        flex-direction: column !important;
+        gap: 10px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero-content .btn {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 12px 16px !important;
+        font-size: 13px !important;
+    }
+
+    .hero-tagline {
+        font-size: 10px !important;
+        padding: 4px 12px !important;
+        margin-bottom: 14px !important;
+    }
+
+    /* ===== 2. 關於我 ===== */
+    #about.premium-global-aligned-section .profile-panel-inner {
+        padding: 24px 16px !important;
+        border-radius: 20px !important;
+    }
+
+    #about.premium-global-aligned-section .profile-main-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #about.premium-global-aligned-section .profile-panel-title {
+        font-size: 20px !important;
+    }
+
+    #about.premium-global-aligned-section .profile-panel-desc {
+        font-size: 13px !important;
+    }
+
+    #about.premium-global-aligned-section .bio-card .bio-text {
+        font-size: 13.5px !important;
+        text-align: left !important;
+    }
+
+    #about.premium-global-aligned-section .block-sub-title {
+        font-size: 15px !important;
+    }
+
+    #about.premium-global-aligned-section .timeline-job-desc {
+        font-size: 13px !important;
+        text-align: left !important;
+    }
+
+    #about.premium-global-aligned-section .timeline-date {
+        font-size: 11px !important;
+    }
+
+    #about.premium-global-aligned-section .timeline-job-title {
+        font-size: 14px !important;
+    }
+
+    .profile-photo-wrapper {
+        max-width: 150px !important;
+    }
+
+    /* ===== 3. 3D 徽章牆 - 垂直排列 ===== */
+    .logo-grid-container {
+        flex-direction: column !important;
+        gap: 25px !important;
+        padding: 10px 0 !important;
+        align-items: center !important;
+        overflow: visible !important;
+        scroll-snap-type: none !important;
+    }
+
+    .logo-grid-container::before,
+    .logo-grid-container::after {
+        display: none !important;
+    }
+
+    .interactive-3d-logo-item {
+        flex-shrink: 0 !important;
+        scroll-snap-align: none !important;
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .badge-main-img-3d {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .badge-github-large {
+        width: 55px !important;
+        height: 55px !important;
+    }
+
+    .laser-vertical-line {
+        display: none !important;
+    }
+
+    .badge-tooltip-text {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        position: relative !important;
+        margin-top: 6px !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        background: none !important;
+        font-size: 9px !important;
+        white-space: normal !important;
+        text-align: center !important;
+        max-width: 100px !important;
+    }
+
+    .premium-3d-logo-section {
+        margin-bottom: 40px !important;
+        margin-top: 20px !important;
+    }
+
+    .badge-laser-guide {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        margin-top: 4px !important;
+    }
+
+    /* ===== 4. CVE 頂部標題 ===== */
+    #portfolio .video-panel-tag {
+        font-size: 9px !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 4px !important;
+    }
+
+    #portfolio .profile-panel-title {
+        font-size: 16px !important;
+        font-weight: 700 !important;
+    }
+
+    #portfolio .hologram-header-row {
+        gap: 8px !important;
+        margin-bottom: 16px !important;
+    }
+
+    #portfolio .hologram-sort-box {
+        font-size: 11px !important;
+    }
+
+    #portfolio .hologram-select-menu {
+        font-size: 11px !important;
+        padding: 4px 10px !important;
+    }
+
+    /* ===== 5. CVE 卡片 ===== */
+    #portfolio .panel-inner-container {
+        min-height: 420px !important;
+    }
+
+    #portfolio .dynamic-accordion-stage {
+        height: 380px !important;
+        max-height: 380px !important;
+        min-height: 380px !important;
+    }
+
+    #portfolio .new-hologram-item {
+        padding: 10px 12px 10px 16px !important;
+        height: auto !important;
+        min-height: 70px !important;
+        max-height: 70px !important;
+        border-radius: 10px !important;
+        margin-bottom: 8px !important;
+    }
+
+    #portfolio .new-hologram-item.active {
+        max-height: none !important;
+        min-height: 70px !important;
+    }
+
+    #portfolio .cve-title {
+        font-size: 10px !important;
+        font-weight: 700 !important;
+    }
+
+    #portfolio .cve-title i {
+        font-size: 10px !important;
+        margin-right: 4px !important;
+    }
+
+    #portfolio .hologram-title-group > div {
+        font-size: 8px !important;
+        margin-top: 1px !important;
+        line-height: 1.2 !important;
+    }
+
+    #portfolio .hologram-item-capsule {
+        font-size: 7px !important;
+        padding: 1px 5px !important;
+        letter-spacing: 0.3px !important;
+    }
+
+    #portfolio .hologram-item-header {
+        gap: 4px !important;
+        align-items: center !important;
+    }
+
+    #portfolio .hologram-title-group {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+
+    #portfolio .hologram-item-desc {
+        font-size: 10px !important;
+        line-height: 1.5 !important;
+    }
+
+    #portfolio .hologram-item-desc strong {
+        font-size: 10px !important;
+    }
+
+    #portfolio .hologram-action-btn {
+        font-size: 9px !important;
+        padding: 4px 10px !important;
+        min-height: 28px !important;
+    }
+
+    #portfolio .hologram-action-btn i {
+        font-size: 9px !important;
+    }
+
+    #portfolio .hologram-expand-body {
+        max-height: 0 !important;
+    }
+
+    #portfolio .new-hologram-item.active .hologram-expand-body {
+        max-height: 800px !important;
+    }
+
+    /* ===== 6. CVE 分頁按鈕 - 向上移動 ===== */
+    #portfolio .smart-pagination-container {
+        padding: 6px 0 !important;
+        min-height: 36px !important;
+        gap: 5px !important;
+        margin-top: 6px !important;
+    }
+
+    #portfolio .cve-page-btn {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 11px !important;
+    }
+
+    /* ===== 7. 學術論文頂部標題 ===== */
+    .scholar-hologram-publications-section .hologram-section-tag {
+        font-size: 9px !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-section-title {
+        font-size: 16px !important;
+        font-weight: 700 !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-header-row {
+        gap: 8px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-sort-box {
+        font-size: 11px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-select-menu {
+        font-size: 11px !important;
+        padding: 4px 10px !important;
+    }
+
+    /* ===== 8. 學術論文卡片 - 文字再縮小 ===== */
+    .scholar-hologram-publications-section .hologram-container {
+        min-height: 520px !important;
+    }
+
+    #dynamic-hologram-scholar-list {
+        height: 480px !important;
+        max-height: 480px !important;
+        min-height: 480px !important;
+    }
+
+    .scholar-hologram-publications-section .new-hologram-item {
+        padding: 8px 10px 8px 14px !important;
+        height: auto !important;
+        min-height: 70px !important;
+        max-height: 70px !important;
+        border-radius: 10px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .scholar-hologram-publications-section .new-hologram-item.active {
+        max-height: none !important;
+        min-height: 70px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-title {
+        font-size: 9px !important;
+        line-height: 1.2 !important;
+        font-weight: 700 !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-title-group > div {
+        font-size: 7px !important;
+        margin-top: 1px !important;
+        line-height: 1.2 !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-capsule {
+        font-size: 6.5px !important;
+        padding: 1px 4px !important;
+        letter-spacing: 0.2px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-header {
+        gap: 3px !important;
+        align-items: center !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-title-group {
+        flex: 1 !important;
+        min-width: 0 !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-desc {
+        font-size: 9px !important;
+        line-height: 1.4 !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-desc strong {
+        font-size: 9px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-action-btn {
+        font-size: 8px !important;
+        padding: 3px 8px !important;
+        min-height: 24px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-action-btn i {
+        font-size: 8px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-visual-box {
+        height: 70px !important;
+        min-height: 70px !important;
+        max-height: 70px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-expand-body {
+        max-height: 0 !important;
+    }
+
+    .scholar-hologram-publications-section .new-hologram-item.active .hologram-expand-body {
+        max-height: 800px !important;
+    }
+
+    /* ===== 9. 學術論文分頁按鈕 - 向上移動 ===== */
+    #scholar-pagination {
+        padding: 6px 0 !important;
+        min-height: 36px !important;
+        gap: 5px !important;
+        margin-top: 6px !important;
+    }
+
+    #scholar-pagination .scholar-page-btn {
+        width: 30px !important;
+        height: 30px !important;
+        font-size: 11px !important;
+    }
+
+    /* ===== 10. 多聲道語言實力 ===== */
+    .premium-cinema-video-section {
+        margin: 10px auto 30px auto !important;
+        padding: 0 12px !important;
+    }
+
+    .video-panel-inner {
+        padding: 18px 14px 22px 14px !important;
+        border-radius: 18px !important;
+        box-shadow: 0 8px 30px rgba(10, 29, 55, 0.02) !important;
+    }
+
+    .video-panel-tag {
+        font-size: 8px !important;
+        margin-bottom: 4px !important;
+        letter-spacing: 0.8px !important;
+    }
+
+    .video-panel-title {
+        font-size: 15px !important;
+        margin-bottom: 6px !important;
+        line-height: 1.3 !important;
+        font-weight: 700 !important;
+    }
+
+    .video-panel-desc {
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+        text-align: left !important;
+    }
+
+    .cinema-tab-control {
+        flex-direction: row !important;
+        gap: 6px !important;
+        flex-wrap: wrap !important;
+        margin-bottom: 14px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .tab-toggle-btn {
+        flex: 1 !important;
+        justify-content: center !important;
+        padding: 6px 8px !important;
+        font-size: 10px !important;
+        min-width: 0 !important;
+        border-radius: 8px !important;
+        gap: 3px !important;
+    }
+
+    .tab-toggle-btn .tab-icon {
+        font-size: 12px !important;
+    }
+
+    .slider-arrow {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 10px !important;
+    }
+
+    .prev-arrow {
+        left: 3px !important;
+    }
+
+    .next-arrow {
+        right: 3px !important;
+    }
+
+    .video-responsive-stage {
+        border-radius: 12px !important;
+    }
+
+    /* 證書卡片 */
+    .certs-grid-stage {
+        gap: 12px !important;
+    }
+
+    .cert-card.horizontal-layout {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+        padding: 14px 12px !important;
+        border-radius: 12px !important;
+        border: 1px solid #e2e8f0 !important;
+        background-color: #f8fafc !important;
+    }
+
+    .cert-card.horizontal-layout:hover {
+        background-color: #ffffff !important;
+        border-color: rgba(0, 102, 255, 0.15) !important;
+        box-shadow: 0 4px 16px rgba(0, 102, 255, 0.04) !important;
+    }
+
+    .cert-left-visual {
+        width: 50px !important;
+        height: 50px !important;
+        flex-shrink: 0 !important;
+        align-self: center !important;
+        border-radius: 50% !important;
+        overflow: hidden !important;
+        background: #f0f4f8 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .cert-left-visual .interactive-3d-logo-item {
+        width: 46px !important;
+        height: 46px !important;
+        border-radius: 50% !important;
+        border: 2px solid #eef2f6 !important;
+        overflow: hidden !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #ffffff !important;
+    }
+
+    .cert-left-visual .badge-main-img-3d {
+        width: 30px !important;
+        height: 30px !important;
+        object-fit: contain !important;
+        border-radius: 50% !important;
+    }
+
+    .cert-left-visual .logo-3d-stage {
+        border-radius: 50% !important;
+        background: transparent !important;
+    }
+
+    .cert-left-visual .interactive-3d-logo-item:hover .badge-main-img-3d {
+        transform: none !important;
+    }
+
+    .cert-left-visual .interactive-3d-logo-item::before {
+        display: none !important;
+    }
+
+    .cert-badge {
+        font-size: 8px !important;
+        padding: 2px 6px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .cert-right-content h4 {
+        font-size: 14px !important;
+        margin: 0 0 3px 0 !important;
+    }
+
+    .cert-right-content p {
+        font-size: 11.5px !important;
+        margin: 0 0 6px 0 !important;
+        line-height: 1.4 !important;
+    }
+
+    .view-cert-hint {
+        font-size: 9.5px !important;
+        padding-top: 6px !important;
+    }
+
+    /* Lightbox */
+    .cert-lightbox .lightbox-content-wrapper {
+        max-width: 95% !important;
+        max-height: 90vh !important;
+        padding: 6px !important;
+    }
+
+    .cert-lightbox .lightbox-content-wrapper img {
+        max-height: 75vh !important;
+    }
+
+    .cert-lightbox .lightbox-close-btn {
+        top: 4px !important;
+        right: 4px !important;
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 12px !important;
+    }
+
+    /* ===== 11. Awards 比賽得獎 - 標題縮小 ===== */
+    .awards-container {
+        padding: 24px 16px 30px 16px !important;
+        border-radius: 20px !important;
+    }
+
+    .awards-tag {
+        font-size: 8px !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 4px !important;
+    }
+
+    .awards-title {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+    }
+
+    .award-card-single {
+        padding: 16px !important;
+        border-radius: 14px !important;
+    }
+
+    .award-content-single {
+        padding: 12px 0 8px 0 !important;
+    }
+
+    .award-icon-single {
+        font-size: 28px !important;
+    }
+
+    .award-name-single {
+        font-size: 15px !important;
+        font-weight: 700 !important;
+    }
+
+    .award-org-single {
+        font-size: 11px !important;
+    }
+
+    .award-desc-single {
+        font-size: 12.5px !important;
+        line-height: 1.5 !important;
+    }
+
+    .award-image-bottom {
+        max-height: 130px !important;
+        padding: 6px 10px !important;
+    }
+
+    .award-image-bottom img {
+        max-width: 90% !important;
+        max-height: 110px !important;
+    }
+
+    .award-footer {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+    }
+
+    .award-year-single {
+        font-size: 10px !important;
+        padding: 2px 10px !important;
+    }
+
+    .award-link-btn {
+        font-size: 11px !important;
+        padding: 5px 12px !important;
+    }
+
+    /* ===== 12. Blog 文章 - 標題縮小 ===== */
+    .blog-section {
+        padding: 30px 16px 30px 16px !important;
+        border-radius: 20px !important;
+    }
+
+    .blog-header-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+        margin-bottom: 24px !important;
+    }
+
+    .blog-section .section-title {
+        font-size: 18px !important;
+        font-weight: 700 !important;
+    }
+
+    .blog-section .section-title::after {
+        width: 30px !important;
+        height: 3px !important;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+
+    .blog-card {
+        border-radius: 14px !important;
+    }
+
+    .blog-image {
+        height: 140px !important;
+    }
+
+    .blog-content {
+        padding: 16px 18px 18px 18px !important;
+    }
+
+    .blog-date {
+        font-size: 11px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .blog-title-link {
+        font-size: 16px !important;
+        font-weight: 700 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .blog-content p {
+        font-size: 13px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .read-more {
+        font-size: 12px !important;
+    }
+
+    .blog-btn-container {
+        margin-top: 28px !important;
+    }
+
+    #load-all-blog-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 10px 18px !important;
+        font-size: 13px !important;
+    }
+
+    .sort-container {
+        width: 100% !important;
+    }
+
+    .sort-select {
+        width: 100% !important;
+        padding: 8px 12px !important;
+        font-size: 12px !important;
+    }
+
+    .pagination-container {
+        gap: 6px !important;
+        margin-top: 28px !important;
+    }
+
+    .page-btn {
+        width: 34px !important;
+        height: 34px !important;
+        font-size: 12px !important;
+    }
+
+    /* ===== 13. 統計數據 ===== */
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 20px 0 12px 0 !important;
+    }
+
+    .stat-item::after {
+        display: none !important;
+    }
+
+    .stat-number {
+        font-size: 30px !important;
+    }
+
+    .stat-number::after {
+        font-size: 16px !important;
+    }
+
+    .stat-label {
+        font-size: 12px !important;
+    }
+
+    .stat-label span {
+        font-size: 10px !important;
+    }
+
+    .stats-section {
+        margin: 20px auto 10px auto !important;
+    }
+
+    /* ===== 14. 聯絡表單 ===== */
+    .contact-wrapper {
+        flex-direction: column !important;
+        border-radius: 14px !important;
+    }
+
+    .contact-form-container {
+        padding: 24px 20px !important;
+    }
+
+    .contact-info-container {
+        padding: 24px 20px !important;
+    }
+
+    .contact-info-container h3 {
+        font-size: 18px !important;
+    }
+
+    .contact-desc {
+        font-size: 13px !important;
+    }
+
+    .form-group label {
+        font-size: 13px !important;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 14px !important;
+        font-size: 14px !important;
+    }
+
+    .submit-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 12px 20px !important;
+        font-size: 14px !important;
+    }
+
+    .info-item {
+        font-size: 13px !important;
+    }
+
+    .social-icon {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 16px !important;
+    }
+
+    /* ===== 15. CV Modal ===== */
+    .cv-modal-content {
+        padding: 28px 20px 24px 20px !important;
+        border-radius: 20px !important;
+        max-width: 95% !important;
+        margin: 16px !important;
+        max-height: 92vh !important;
+    }
+
+    .cv-modal-header h2 {
+        font-size: 20px !important;
+    }
+
+    .cv-modal-header p {
+        font-size: 13px !important;
+    }
+
+    .cv-contact-item {
+        padding: 12px 14px !important;
+        gap: 12px !important;
+    }
+
+    .cv-contact-icon {
+        font-size: 24px !important;
+        width: 36px !important;
+    }
+
+    .cv-contact-info h4 {
+        font-size: 14px !important;
+    }
+
+    .cv-contact-info p {
+        font-size: 12px !important;
+    }
+
+    .cv-email-form {
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+
+    .cv-email-form input {
+        font-size: 14px !important;
+        padding: 10px 14px !important;
+    }
+
+    .cv-email-form button {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 10px !important;
+    }
+
+    .cv-modal-close {
+        top: 12px !important;
+        right: 14px !important;
+        font-size: 20px !important;
+    }
+
+    /* ===== 16. 導航欄 ===== */
+    .nav-container {
+        padding: 10px 16px !important;
+    }
+
+    .nav-logo {
+        font-size: 17px !important;
+    }
+
+    .hamburger {
+        display: block !important;
+        z-index: 1001 !important;
+    }
+
+    .hamburger .bar {
+        width: 22px !important;
+        height: 2.5px !important;
+        margin: 4.5px auto !important;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0 !important;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg) !important;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg) !important;
+    }
+
+    .nav-menu {
+        position: fixed !important;
+        left: -100% !important;
+        top: 0 !important;
+        flex-direction: column !important;
+        background-color: rgba(255, 255, 255, 0.98) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        width: 100% !important;
+        height: 100vh !important;
+        text-align: center !important;
+        padding-top: 70px !important;
+        transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+        border-top: none !important;
+        gap: 0 !important;
+        overflow-y: auto !important;
+        z-index: 1000 !important;
+    }
+
+    .nav-menu.active {
+        left: 0 !important;
+    }
+
+    .nav-link {
+        display: block !important;
+        padding: 14px 20px !important;
+        font-size: 16px !important;
+        color: #0A1D37 !important;
+        border-radius: 0 !important;
+        border-bottom: 1px solid rgba(10, 29, 55, 0.04) !important;
+    }
+
+    /* ===== 17. Footer ===== */
+    .footer {
+        padding: 20px 16px !important;
+        font-size: 12px !important;
+    }
+}
+
+/* ==========================================================================
+   📱 小型手機 (480px 以下)
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+    .hero-name {
+        font-size: 22px !important;
+    }
+
+    .hero-job {
+        font-size: 14px !important;
+    }
+
+    .hero-content p {
+        font-size: 12.5px !important;
+    }
+
+    .hero-content .btn {
+        font-size: 12px !important;
+        padding: 10px 14px !important;
+    }
+
+    /* CVE 更小 */
+    #portfolio .dynamic-accordion-stage {
+        height: 320px !important;
+        max-height: 320px !important;
+        min-height: 320px !important;
+    }
+
+    #portfolio .new-hologram-item {
+        min-height: 60px !important;
+        max-height: 60px !important;
+        padding: 8px 10px 8px 14px !important;
+    }
+
+    #portfolio .new-hologram-item.active {
+        max-height: none !important;
+        min-height: 60px !important;
+    }
+
+    #portfolio .cve-title {
+        font-size: 9px !important;
+    }
+
+    #portfolio .hologram-title-group > div {
+        font-size: 7.5px !important;
+    }
+
+    #portfolio .hologram-item-capsule {
+        font-size: 6.5px !important;
+        padding: 1px 4px !important;
+    }
+
+    #portfolio .hologram-item-desc {
+        font-size: 9px !important;
+    }
+
+    #portfolio .hologram-action-btn {
+        font-size: 8px !important;
+        padding: 3px 8px !important;
+        min-height: 24px !important;
+    }
+
+    #portfolio .cve-page-btn {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 10px !important;
+    }
+
+    /* 頂部標題更小 */
+    .scholar-hologram-publications-section .hologram-section-title,
+    #portfolio .profile-panel-title {
+        font-size: 14px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-section-tag,
+    #portfolio .video-panel-tag {
+        font-size: 8px !important;
+    }
+
+    /* 學術論文更小 */
+    .scholar-hologram-publications-section .new-hologram-item {
+        min-height: 60px !important;
+        max-height: 60px !important;
+        padding: 6px 8px 6px 12px !important;
+    }
+
+    .scholar-hologram-publications-section .new-hologram-item.active {
+        max-height: none !important;
+        min-height: 60px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-title {
+        font-size: 8px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-title-group > div {
+        font-size: 6.5px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-capsule {
+        font-size: 6px !important;
+        padding: 1px 3px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-item-desc {
+        font-size: 8px !important;
+    }
+
+    .scholar-hologram-publications-section .hologram-action-btn {
+        font-size: 7px !important;
+        padding: 2px 6px !important;
+        min-height: 20px !important;
+    }
+
+    #dynamic-hologram-scholar-list {
+        height: 380px !important;
+        max-height: 380px !important;
+        min-height: 380px !important;
+    }
+
+    #scholar-pagination .scholar-page-btn {
+        width: 28px !important;
+        height: 28px !important;
+        font-size: 10px !important;
+    }
+
+    /* 語言影片 */
+    .video-panel-title {
+        font-size: 14px !important;
+    }
+
+    .video-panel-desc {
+        font-size: 10.5px !important;
+    }
+
+    .tab-toggle-btn {
+        font-size: 9px !important;
+        padding: 5px 6px !important;
+    }
+
+    /* 證書 */
+    .cert-right-content h4 {
+        font-size: 12px !important;
+    }
+
+    .cert-right-content p {
+        font-size: 10.5px !important;
+    }
+
+    /* Awards 更小 */
+    .awards-tag {
+        font-size: 7px !important;
+    }
+
+    .awards-title {
+        font-size: 16px !important;
+    }
+
+    .award-name-single {
+        font-size: 14px !important;
+    }
+
+    .award-desc-single {
+        font-size: 11.5px !important;
+    }
+
+    /* Blog 更小 */
+    .blog-section .section-title {
+        font-size: 16px !important;
+    }
+
+    .blog-title-link {
+        font-size: 14px !important;
+    }
+
+    .blog-content p {
+        font-size: 12px !important;
+    }
+}
