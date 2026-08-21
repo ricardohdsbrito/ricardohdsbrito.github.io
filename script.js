@@ -781,6 +781,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 closeLightbox();
             }
         });
+  
     }
 });
 

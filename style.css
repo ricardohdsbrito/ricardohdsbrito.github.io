@@ -2536,6 +2536,7 @@ body {
     pointer-events: auto;
 }
 
+
 .lightbox-overlay {
     position: absolute;
     top: 0;
@@ -2545,6 +2546,9 @@ body {
     background: rgba(10, 29, 55, 0.85);
     backdrop-filter: blur(12px);
 }
+
+
+
 
 /* ==========================================================================
    Lightbox 燈箱 - 可滾動查看圖片
